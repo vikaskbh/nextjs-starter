@@ -16,7 +16,12 @@ export const metadata: Metadata = {
   description: 'A modern Next.js 15 starter project with Tailwind CSS',
   keywords: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS'],
   authors: [{ name: 'Your Name' }],
-  viewport: 'width=device-width, initial-scale=1',
+}
+
+// app/about/page.tsx (or layout.tsx)
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
 }
 
 export default function RootLayout({
