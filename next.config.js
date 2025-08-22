@@ -1,16 +1,22 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    appDir: true,
-  },
-  images: {
-    domains: [],
-  },
-  // Enable React strict mode for better development experience
   reactStrictMode: true,
-  // Enable SWC minification for faster builds
-  swcMinify: true,
+
+  // Optimize images
+  images: {
+    domains: ["your-cdn.com", "images.unsplash.com"],
+    formats: ["image/avif", "image/webp"], // Modern formats
+  },
+
+  // Optimize output for production
+  poweredByHeader: false, // Hides "X-Powered-By: Next.js" for security
+  compress: true,         // Ensures gzip compression
+
+  // i18n setup (if you add multi-language later)
+  // i18n: {
+  //   locales: ["en", "fr"],
+  //   defaultLocale: "en",
+  // },
 }
 
 module.exports = nextConfig
-
