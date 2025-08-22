@@ -2,6 +2,12 @@
 
 A modern, full-featured Next.js 15 starter project with TypeScript, Tailwind CSS, and a beautiful design system.
 
+## 🚀 Live Demo
+
+Check out the deployed starter on Vercel:  
+[https://nextjs-starter-three-beryl.vercel.app/](https://nextjs-starter-three-beryl.vercel.app/)
+
+
 ## ✨ Features
 
 - **Next.js 15** - Latest version with App Router and Server Components
